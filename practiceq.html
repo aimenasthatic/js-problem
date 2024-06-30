@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program  to declare a veriable name and assign
+//  a string value. print the value of the name variable to console. 
+
+var x="5";
+console.log(x)
+
+// Write a JavaScript program to declare two variables num1 and num2 and assign
+// them numerical values. Calculate the sum of num1 and num2 and store the result
+// in a variable called sum. Print the value of sum to the console.
+
+const a=5;
+const b=10;
+// const sum= a+b;
+// console.log(sum)
+console.log("sum="+(a+b))
+// Write a JavaScript program to declare a constant variable PI and assign it the value
+// of 3.14159. Declare another variable radius and assign it a numerical value.
+// Calculate the area of a circle using the formula area = PI * radius * radius and store
+// the result in a variable called circle Area. Print the value of circle Area to the
+// console.
+const PI=3.14;
+let r=4;
+// let area= PI*r*r;
+// console.log(area)
+console.log("circle is" + (PI*r*r))
+
+// write a JavaScript program that takes a number as input and checks if it is positive,
+// negative, or zero. Print an appropriate message to the console based on the input.
+
+// Function to check if a number is positive, negative, or zero
+function checkNo(number) {
+    // if (number > 0) {
+    //     console.log("The number is positive.");
+    // } else 
+    if (number%2==0) {
+        console.log("The number is even");
+    } else {
+        console.log("The number is odd.");
+    }
+}
+
+// Example usage: prompt the user for a number
+let input = prompt("Enter a number:");
+
+// Convert the input to a number
+let number = parseFloat(input);
+
+// Check if the input is a valid number
+if (!isNaN(number)) {
+    checkNo(number);
+} else {
+    console.log("Please enter a valid number.");
+}
+
+// // Write a JavaScript program using a while loop to print the numbers from 1 to 10 to
+// // the console.
+
+let n=1;
+while(n<=10){
+ console.log(n)
+ n++;
+}
+
+// Write a JavaScript program using a for loop to print the numbers from 1 to 10 to
+// the console.
+
+for(i=1;i<=10;i++){
+    console.log(i)
+}
+//  lets print all even number from 0 to 100
+
+for(i=1;i,i<=100;i++){
+    if(i%2!==0){
+ console.log ("i=",i)
+    }
+}
+
+for(i=1;i,i<=100;i++){
+    if(i%2===0){
+ console.log ("i=",i)
+    }
+}
+//  for(i=1;i<=100;i++){
+//     console.log(`${i} coder`);
+
+//  }
+
+let gamnum=25;
+let username=prompt("guss the game number");
+
+while(username!=gamnum){
+    username=prompt("you entered wrong number. guess again:");
+}
+
+console.log("congratulations, you entered the right number");
+    </script>
+</body>
+</html>
